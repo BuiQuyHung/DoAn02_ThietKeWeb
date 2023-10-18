@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+header{
+    background-color: #FFF200;
+    text-align: center;
+}
+/*------------------Header-------------------*/
+nav{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+nav ul li:nth-child(2) i {
+    color: #FFF200;
+    font-size: 15px;
+}
+nav ul li:nth-child(2) a {
+    color: #FFF200;
+}
+nav ul li:nth-child(3){
+    position: relative;
+}
+nav ul li:nth-child(3) input {
+   height: 30px;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   padding-left: 6px;
+   outline: none;
+}
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 15px;
+    right: 12px;
+    color: #333;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button {
+    height: 30px;
+    padding: 0 8px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #918e8e;
+    border-radius: 5px;
+    transition: all 0.3s ease; /*--Tốc độ đổ bóng khi dê chuột vào --*/
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+   background-color: #6e6b6b;
+}
+nav ul li:nth-child(5){
+    text-align: center;
+ }
+nav ul li:nth-child(5):hover a{
+   color: #FFF200;
+}
+nav ul li:nth-child(6):hover a{
+    color: #FFF200;
+ }
+ nav ul li:nth-child(7):hover a{
+    color: #FFF200;
+ }
+ nav ul li:nth-child(8):hover a{
+    color: #FFF200;
+ }
+ /*-------------------Menu-bar--------------------*/
+.menu-bar{
+    background-color: #FED100;
+ }
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+ }
+.menu-bar ul li a{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.menu-bar ul li a i{
+    padding-right: 6px;
+    font-size: 16px;
+}
+.menu-bar-content > ul > li{ /*>: chỉ dùng trực tiếp cho phần tử đó, phần tử con không ảnh hưởng*/
+    padding: 15px 6px;
+    transition: all 0.2s ease;
+}
+.menu-bar ul li:hover{
+    background-color: #FFFFFF;
+}
+.menu-bar-content > ul > li:nth-child(8){
+    position: relative;
+}
+.menu-bar-content > ul > li:nth-child(8)::before {
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #F51212;
+    border-radius: 5px;
+    right: -20px;
+    top: 2px;
+    font-size: 10px;
+    padding-left: 3px;
+    color: #FFFFFF;
+}
+.menu-bar-content > ul > li:nth-child(8)::after{ /*--Mũi tên trỏ xuống màu đỏ phần sim thẻ*/
+    position: absolute;
+    content: "";
+    background-color: #F51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 12px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+/*---------------Address-form----------------*/
+.address-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    display: none;
+    z-index: 999;
+}
+.address-form-content{
+    width: 420px;
+    height: 450px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.address-form-content form{
+    padding: 12px 40px;
+}
+.address-form-content h2{
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.address-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.address-form-content form p{
+    font-size: 16px;
+
+}
+.address-form-content form input,select{
+    height: 45px;
+    display: block; /*--Tự động xuống hàng*/
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.address-form-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: rgb(249, 126, 14);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+}
+/*--------------------Submenu------------------------*/
+.menu-bar-content ul li{
+    position: relative;
+}
+.submenu{
+    position: absolute; /*Neo vào danh mục phụ kiện, phụ thuộc vào div mẹ*/
+    background-color: #ddd;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.submenu ul li{
+    padding: 6px 0;
+}
+.menu-bar-content ul li:hover .submenu{
+    display: block;
+}
+.submenu ul li:hover a{
+    color: #257ad5;
+}
+.submenu ul li:hover{
+    background: none;
+}
+/*------------------Slider-------------------*/
+.slider{
+    padding: 20px 0;
+    height: 350px;   
+}
+.slider-content{
+    display: flex;
+    justify-content: space-between; /* Đẩy các thẻ DIV về 2 phía*/
+
+}
+.slider-content-left{
+    width: 65%;
+}
+.slider-content-left-top{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.slider-content-left-top:hover i{
+    opacity: 1;
+}
+.slider-content-left-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-content-left-bottom{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ddd;
+    border-top: none;
+    height: 50px;
+}
+.slider-content-left-bottom li{
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 0;
+    height: 100%;
+    line-height: 38px;
+    position: relative;
+}
+.slider-content-left-bottom li::before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background-color: #ddd;
+    right: 0;
+}
+.slider-content-left-bottom li.active{
+    border-top: 4px solid #FFF200;
+}
+.slider-content-left-top-btn{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.slider-content-left-top-btn i{
+    color: #333;
+    font-size: 32px;
+    height: 50px;
+    width: 25px;
+    background-color: #ffffff;
+    display: flex; /* Cho mũi tên ra giữa phần bao nó chiều trên dưới*/
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%); /* Cho mũi tên ra giữa phần bao nó chiều trái phải*/
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.slider-content-right{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.slider-content-right li{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+.slider-content-right li img{
+    height: 170px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+
