@@ -446,7 +446,7 @@ nav ul li:nth-child(6):hover a{
 .slider-product-one-content-items:nth-child(3){
     transform: translateX(200%);
 }
-/*-------------------------Product Gallery-----------------------*/
+/*-------------------------Product Gallery 1---------------------*/
 .product-gallery-one-content-product{
     display: flex;
     justify-content: space-between;
@@ -536,4 +536,94 @@ nav ul li:nth-child(6):hover a{
 .product-gallery-one-content-title ul li:hover a{
     color: tomato;
 }
-/*------------------------------------------------------------*/
+/*---------------------------Product Gallery 2-----------------------*/
+.product-gallery-two{
+    margin-top: 30px;
+}
+.product-gallery-two-content{
+    display: flex;
+    padding-right: 12px;
+    background-color: rgb(40, 40, 219);
+}
+.product-gallery-two-content-left{
+    width: 20%;
+}
+.product-gallery-two-content-left img{
+    width: 100%;
+    height: 415px;
+}
+.product-gallery-two-content-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.product-gallery-two-content-right-top{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: #ddd;
+}
+.product-gallery-two-content-right-top li{
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-gallery-two-content-right-top li:hover{
+    background-color: orangered;
+    transition: all 0.3s ease;
+}
+.product-gallery-two-content-right-top .active{
+    background-color: #FFF;
+    color: #257ad5;
+}
+.product-gallery-two-content-right-top li:last-child{
+    border: none;
+}
+.product-gallery-two-content-right-top li:last-child a{
+    font-size: 16px;
+}
+.product-gallery-two-content-right-bottom{
+    background-color: #FFF;
+    display: flex;
+    border-radius: 5px;
+}
+.product-gallery-two-content-right-bottom-item{
+    width: 25%;
+    padding: 40px 20px 20px;
+    border-right: 1px solid #ddd;
+}
+.product-gallery-two-content-right-bottom-item img{
+    width: 100%;
+}
+.product-gallery-two-content-right-bottom-item:hover > img{
+    transform: translateY(-15px);
+    transition: all 0.5s ease;
+}
+.product-gallery-two-content-right-bottom-item-text li{
+    margin-bottom: 5px;
+}
+.product-gallery-two-content-right-bottom-item-text li:first-child{
+    width: 100%;
+    height: 30px;
+    color: #FFF;
+    background-color: orangered;
+    margin-bottom: 12px;
+    line-height: 30px;
+    padding-left: 15px;
+    border-radius: 40px;
+}
+.product-gallery-two-content-right-bottom-item-text li:nth-child(2){
+    font-weight: bold;
+}
+.product-gallery-two-content-right-bottom-item-text li:nth-child(2):hover{
+    color: #257ad5;
+}
+.product-gallery-two-content-right-bottom-item-text li:nth-child(4){
+    font-weight: bold;
+}
+.product-gallery-two-content-right-bottom-item-text li:nth-child(5){
+    font-style: italic;
+}
