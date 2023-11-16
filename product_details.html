@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-DoAn02-BQH</title>
+    <link rel="stylesheet" href="product_details.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <img src ="./TGDD_Picture/20.10-1200-44-1200x44.webp" alt="anh_top">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><img style="width: 200px;" src="./TGDD_Picture/Logo-The-Gioi-Di-Dong.webp"></a></li>
+                <li id="address-form"><a href="#">Hải Dương <i class="fa-solid fa-sort-down"></i></a></li>
+                <li><input type ="text" placeholder="Bạn tìm gì..."><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <li><a href=""></a><button class="btngiohang"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Giỏ hàng</button></li>    
+                <li><a href="login.html">Tài khoản & <br> đơn hàng</a></li>
+                <li><a href="">24h công nghệ</a></li>
+                <li><a href="">Hỏi đáp</a></li>
+                <li><a href="">Game app</a></li>
+                <div class="address-form"> 
+                    <div class="address-form-content">
+                        <h2>Chọn địa chỉ nhận hàng <span id="address-close">X Đóng</span></h2>
+                        <form action="">
+                            <p>Quý khách vui lòng cho biết Địa Chỉ Nhận Hàng để biết chính xác thời gian giao hàng</p>
+                            <select name="">
+                                <option value="#">--Chọn địa chỉ</option>
+                                <option value="#">Hải Dương</option>
+                                <option value="#">Hà Nội</option>
+                                <option value="#">Hồ Chí Minh</option>
+                            </select>
+                            <select name="">
+                                <option value="#">--Chọn quận/huyện</option>
+                                <option value="#">TP Hải Dương</option>
+                                <option value="#">Gia Lộc</option>
+                                <option value="#">Ninh Giang</option>
+                            </select>
+                            <select name="">
+                                <option value="#">--Chọn phường/xã</option>
+                                <option value="#">Tân Bình</option>
+                                <option value="#">Thanh Bình</option>
+                                <option value="#">Bình Hàn</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, Tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+    
+            </ul>
+        </div>   
+    </nav>
+    <section class="menu-bar">
+        <div class="container">
+                <div class="menu-bar-content">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-mobile"></i> Điện thoại</a></li>
+                        <li><a href=""><i class="fa-solid fa-laptop"></i> Laptop</a></li>
+                        <li><a href=""><i class="fa-solid fa-tablet"></i></i> Tablet</a></li>
+                        <li><a href=""><i class="fa-solid fa-headphones"></i> Phụ kiện <i style="margin-left: 3px;" class="fa-solid fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="">Sạc dự phòng</a></li>
+                                    <li><a href="">Sạc - cáp</a></li>
+                                    <li><a href="">Ốp lưng điện thoại</a></li>
+                                    <li><a href="">Miếng dán</a></li>
+                                    <li><a href="">Gậy chụp ảnh, Gimbal</a></li>
+                                    <li><a href="">Giá đỡ điện thoại, laptop</a></li>
+                                    <li><a href="">Đế, móc điện thoại</a></li>
+                                    <li><a href="">Túi đựng AirPods</a></li>
+                                    <li><a href="">AirTag, Vỏ bảo vệ AirTag</a></li>
+                                    <li><a href="">Bàn phím, bút tablet</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-clock"></i> Đồng hồ thông minh</a></li>
+                        <li><a href=""><i class="fa-solid fa-clock"></i> Đồng hồ </a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile"></i> Máy cũ giá rẻ</a></li>
+                        <li><a href=""> Sim thẻ nạp</a></li>
+                        <li><a href=""> Trả góp điện nước</a></li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+<!-------------------------------------------------------------------------------------------->
+    <div id="ChiTiet">
+        <div id="ChiTiet-Left">
+            <div id="CT-Top">
+                <h2 style="color: #197dc5">THÔNG TIN SẢN PHẨM</h2>
+                <img id="slide" src="/TGDD_Picture/9.jpg" atl="AnhSanPham" style="width: 300px; height: 260px; padding-left: 70px;"/>
+            </div>
+            <div id="CT-Bottom">
+                <img src="/TGDD_Picture/10.jpg" width="150px" onclick="nextCT(10)" />
+                <img src="/TGDD_Picture/11.jpg" width="150px" onclick="nextCT(11)" />
+                <img src="/TGDD_Picture/12.jpg" width="150px" onclick="nextCT(12)" />
+                <img src="/TGDD_Picture/13.jpg" width="150px" onclick="nextCT(13)" />
+                <img src="/TGDD_Picture/14.jpg" width="150px" onclick="nextCT(14)" />
+
+            </div>
+        </div>
+        <div id="ChiTiet-Right">
+            <h1 style="padding-top: 10px; color: #197dc5">Điện thoại iPhone 12 128GB</h1>
+            <br>
+            <span style="color: red; font-size: xx-large; font-weight: bold; float: left">15.190.000₫</span></span>
+            <img src="/TGDD_Picture/left_bottom.webp" style="width: 400px; height: 50px; float: left; margin-top: 20px"/>
+            <div id="option" style="padding-top: 150px;">
+                <span style="font-size: 20px; font-weight: bold ; color: #197dc5">Chọn màu</span>
+                <div id="cl-option">
+                    <button class="lc-btn">Tím</button>
+                    <button class="lc-btn">Tím than</button>
+                    <button class="lc-btn">Đỏ</button>
+                    <button class="lc-btn">Đen</button>
+                    <button class="lc-btn">Trắng</button>
+                <br><br>
+                <span style="font-size: 20px; font-weight: bold ; color: #197dc5">Dung lượng bộ nhớ</span>
+                <div id="cl-option">
+                    <button class="lc-btn">64GB</button>
+                    <button class="lc-btn">128GB</button>
+                    <button class="lc-btn">256GB</button>
+                <br><br>
+                    <button id="btnChon">Mua ngay giá rẻ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="MoTa">
+        <div id="MoTa-Center">
+            <div id="MoTa-Center-Left">
+                <img src="/TGDD_Picture/detail_main.jpg"/>
+            </div>
+            <div id="MoTa-Center-Right">
+                <h2>Cấu hình Điện thoại iPhone 12 128GB</h2>
+                <table>
+                    <tr>
+                      <td class="attribute">Màn hình:</td>
+                      <td>OLED 6.1" Super Retina XDR</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">Hệ điều hành:</td>
+                      <td>iOS 15</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">Camera sau:</td>
+                      <td>2 camera 12 MP</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">Camera trước:</td>
+                      <td>12 MP</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">Chip:</td>
+                      <td>Apple A14 Bionic</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">RAM:</td>
+                      <td>4 GB</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">Dung lượng lưu trữ:</td>
+                      <td>128 GB</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">SIM:</td>
+                      <td>1 Nano SIM & 1 eSIM, Hỗ trợ 5G</td>
+                    </tr>
+                    <tr>
+                      <td class="attribute">Pin, Sạc:</td>
+                      <td>2815 mAh, 20W</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <h2 style="color: #197dc5; padding-left: 50px;">MÔ TẢ SẢN PHẨM</h2>
+        <br>
+        <div id="spanctsp" style="padding-left: 50px;">
+                <h2>
+                    Apple đã trình diện đến người dùng mẫu điện thoại iPhone 12 128GB với sự tuyên bố về một kỷ nguyên mới của iPhone 5G, nâng cấp về màn hình và hiệu năng hứa hẹn đây sẽ là smartphone cao cấp đáng để mọi người đầu tư sở hữu. 
+                </h2>
+                <br>
+                <h2 style="margin-bottom: 5px;">
+                    Hiệu năng vượt trội, thách thức mọi giới hạn
+                </h2>
+                <span>
+                    iPhone 12 được trang bị chipset A14 Bionic - bộ xử lý được trang bị lần đầu trên iPad Air 4 vừa cho ra mắt cách đây không lâu, mở đầu xu thế chip 5 nm thương mại trên toàn thế giới.</span>
+                <br>
+                <h3>
+                    Đặc tính của Công nghệ sạc đa năng
+                </h3>
+                <span>
+                    Apple cho biết A14 Bionic sẽ mạnh hơn gần 40% chipset A13 Bionic, trong đó khả năng xử lý đồ họa nhanh hơn 50% cũng như các tác vụ học máy mượt mà hơn 80% khi so sánh với bộ xử lý tiền nhiệm.
+
+                    Apple cũng đã hỗ trợ kết nối mạng 5G tốc độ load cực nhanh cho mọi trải nghiệm lướt web, xem phim luôn được ổn định và mượt mà hơn.</span>
+               
+                <span>iPhone 12 cũng được tích hợp thêm chế độ “Smart Data Mode” cho phép máy tự động phát hiện ứng dụng, các thao tác nào cần nhiều băng thông để kích hoạt 5G. Nếu sử dụng các tác vụ thông thường máy sẽ chuyển sang chế độ 4G LTE phù hợp với từng điều kiện sử dụng, giúp tiết kiệm dữ liệu, hạn chế nóng máy và duy trì thời lượng pin sử dụng cho người dùng.
+
+                    Được trang bị con chip mạnh nhất hiện nay đi kèm với khả năng kết nối mạng 5G giúp điện thoại chơi game mượt mà nay lại mượt mà hơn. Với sự chuyển động trơn tru, tốc độ load nhanh với độ trễ gần như bằng không chắc chắn sẽ đem đến sự hài lòng đến với người dùng.</span>
+                <h3>
+                    Vẻ đẹp gợi nhớ và chuẩn màn hình OLED
+                </h3>
+                <span>
+                    iPhone 12 lấy cảm hứng vẻ đẹp hoài niệm của iPhone 4 và iPhone 5 từ những năm về trước hay các dòng Tablet iPad Pro và iPad Air mới nhất thay vì bo cong như điện thoại iPhone 11.                    
+                </span>
+                <span>
+                    Màn hình Super Retina XDR OLED tràn viền được trang bị trên iPhone 12 cho trải nghiệm xem được sáng hơn, đắm chìm hơn. Hỗ trợ True Tone và có độ sáng tối đa là 1.200 nits ở HDR và độ sáng tiêu biểu tối đa là 625 nits từ đó giúp máy đủ sáng để hoạt động tốt khi sử dụng dưới ánh nắng mặt trời.
+                </span>
+            </div>
+    </div>
+    <img style="padding-left: 200px;margin-top: 10px;" src="/TGDD_Picture/details_bottom.jpg"/>
+</div>
+<!-------------------------------------------------------------------------------------------->
+<section class="footer-end">
+    <div class="lienhe">
+        <a href="https://www.facebook.com/thegioididongcom" target="_self">
+            <img src="./TGDD_Picture/logo-zalo.jpg" style="width:80px; height:80px"/>
+            <img src="./TGDD_Picture/logo-facebook.png" style="width:70px; height:70px"/>
+    </div>
+    <div id="confirm-wrapper">
+        <span>© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+                Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2, Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Email: Tot.huynhvan@thegioididong.com</span>
+        <img src="./TGDD_Picture/bocongthuong.png">
+    </div>
+</section>
+
+    <script src="MyScript.js"></script>
+</body>
+</html>

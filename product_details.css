@@ -241,200 +241,149 @@ nav ul li:nth-child(6):hover a{
 .submenu ul li:hover{
     background: none;
 }
-/*-----------------------------Slider---------------------------------*/
-.slider{
-    padding: 20px 0;
-    height: 350px;   
-}
-.slider-content{
-    display: flex;
-    justify-content: space-between; /*--Đẩy các thẻ DIV về 2 phía--*/
-}
-.slider-content-left{
-    width: 70%;
-}
-.slider-content-left-top{
+/* ------------------------------------------------------- */
+#ChiTiet{
     width: 100%;
-    height: 300px;
-    position: relative;
+    float: left;
+    margin: 0px auto;
 }
-.slider-content-left-top:hover i{
-    opacity: 1;
-}
-.slider-content-left-top img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.slider-content-left-bottom{
-    border: 2px solid #ddd;
-    border-top: none;
-    height: 45px;
-}
-.slider-content-left-bottom li{
-    width: 100%;
-    cursor: pointer;
-    padding: 0 0;
-    height: 100%;
-    position: relative;
-}
-.slider-content-left-bottom li img{
-    width: 100%;
-    height: 100%;
-}
-.slider-content-left-bottom li.active{
-    border-top: 2px solid #FFF200;
-}
-.dieuhuong{
-    position: absolute;
-    top: 50%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    color: #FFFFFF;
-    font-size: 40px;
-} 
-.dieuhuong i{
-    color: #333;
-    font-size: 35px;
-    height: 50px;
-    width: 25px;
-    background-color: #ffffff;
-    display: flex; /*--Cho mũi tên ra giữa phần bao nó chiều trên dưới--*/
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    opacity: 0; /*--Khi chúng ta hover vào mũi tên điều hướng mới hiện ra--*/
-    transition: all 0.3s ease;
-    cursor: pointer;
-} 
-.slider-content-left-top-container{
-    overflow: hidden;
-    border-radius: 5px;
-    position: relative;
-}
-.slider-content-right{
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 5px;
-}
-.slider-content-right li{
-    width: 50%;
-    height: 50%;
-    text-align: center;
-}
-.slider-content-right li img{
-    height: 170px;
-    width: 160px;
-    border-radius: 5px;
-}
-/*------------------------------------------------*/
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
-.product-items{
-    display: flex;
-    justify-content: space-between;
-    background-color: #ddd;
-    padding: 12px;
-}
-.product-item{
-    width: 19%;
-    background-color: #fff;
-    padding: 12px;
-    text-align: center;
-}
-.product-item img{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.product-item img:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-.product-item-text{
-    display: flex;
-    justify-content: space-between;
-}
-.product-item button{
-    margin-top: 12px;
-    height: 30px;
-    padding: 0 12px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    transition: all0.3s ease;
-}
-.product-item button:hover{
-    background-color: tomato;
-}
-/*--------------------CART---------------------------*/
-.cart{
-    width: 50%;
-    margin: auto;
-    text-align: center;
+#ChiTiet-left{
+    width: 60%;
+    height: 500px;
+    background-color: #FFFFFF;
+    float: left;
+    padding-left: 80px;
     padding-top: 30px;
 }
-.cart h2{
-    margin-bottom: 20px;
-
+#ChiTiet-right{
+    width: 40%;
+    height: 500px;
+    float: right;
+    padding-top: 30px;
 }
-.cart table{
+#CT-Top{
     width: 100%;
+    height: 350px;
 }
-.cart table thead tr th:first-child{
-    text-align: left;
+#CT-Top h2{
+    padding-left: 70px;
+    padding-bottom: 30px;
 }
-.cart table tr td{
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
+#CT-Bottom{
+    width: 100%;
+    height: 150px;
 }
-.cart table thead tr th:last-child{
-    text-align: right;
-}
-.cart table tbody tr td:last-child{
-    text-align: right;
-}
-.cart table tbody tr td{
-    text-align: center;
-}
-/*---------------CART-------------*/
-.cart button{
-    margin-top: 12px;
-    height: 30px;
-    padding: 0 20px;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
+#CT-Bottom img{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    border: 1px solid #ddd ;
     border-radius: 5px;
-    background-color: tomato;
 }
-.cart button:hover{
-    background-color: #F51212;
-    font-weight: bold;
-    color: #ddd;
+.lc-btn {
+    height: 30px;
+    line-height: 20px;
+    color: #000000;
+    border: 1px solid #197dc5;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: white;
 }
-.cart{
-    position: fixed;
-    height: 100vh;
-    width: 400px;
-    right: 0;
-    top: 0;
-    background-color: #fffcfc;
-    padding: 12px 20px;
-    overflow-y: scroll;
-    right: -100%;
-    transition: all0.3s ease;
-}
-.cart i{
+.lc-btn:hover {
     cursor: pointer;
-    padding-bottom: 20px;
+    background-color:#197dc5;
+    color: white;
 }
-.cart i:hover{
-    transform: scale(1.5);
-    transition: all 0.3s ease;
+.lc-btn:focus {
+    cursor: pointer;
+    background-color:#197dc5;
+    color: white;
+}
+#btnChon {
+    background-color:orangered;
+    color: white;
+    width: 410px;
+    height: 40px;
+    margin-left: 0px;
+    border: red;
+    border-radius: 5px;
+}
+#btnChon:hover{
+    cursor: pointer;
+    background-color: red;
+}
+#MoTa{
+    float:left;
+}
+#MoTa-Center{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+#MoTa-Center-Left{
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+#MoTa-Center-Left img{
+    width: 100%;
+    height:90%;
+}
+#MoTa-Center-Right{
+    width: 40%;
+    height: 500px;
+    float: right;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+} 
+.attribute {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+#spanctsp h3{
+    color: #197dc5;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#spanctsp span{
+    font-size: 18px;
+}
+/* ---------------------------------------------------------------- */
+#content{
+    width: 100%;
+    min-height: 360px;
+    background-color: #FFFFFF;
+}
+#featured-brands {
+    width: 100%;
+    height: 280px;
+    margin-left: 10px;
+}
+.brands {
+    float:left;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 15%;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #03a6f1;
+}
+.brands img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+.brands img:hover {
+    transform: scale(1.2);
 }
 /* ---------------------Footer End-------------------------- */
 .lienhe{
@@ -443,93 +392,14 @@ nav ul li:nth-child(6):hover a{
     position: fixed; 
     bottom: 80px;
 }
-#home-policy {
-    height: 125px;
-    background-color: #ffffff;
-    color:  #03a6f1;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 30px 0px 20px;
-    display: flex;
-}
-.policy-item {
-    width: 300px;
-    height: 30px;
-    font-size: larger;
-}
-.policy-item img {
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-left: 20px;
-}
-.policy-item span {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding-left: 10px;
-}
-#nav-wrapper {
-    width: 100%;
-    height: 263px;
-    font-size: 14px;
-    font-weight: 300;
-    background-color: #FFFFFF
-}
-#grid-uniform {
-    color: #333333;
-    font-size: 14px;
-    font-weight: 300;
-    margin-left: 50px;
-    /* margin: 0px 0px 0px 260px; */
-    display: flex;
-}
-.nav h4 {
-    color : #1293f5;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 19.6px;
-    margin: 0px 0px 15px;
-    text-transform: uppercase;
-}
-.nav:hover h4{
-    color: rgb(0, 68, 255);
-}
-.nav li {
-    width: 218px;
-    height: 24px;
-    display: list-item;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: left;
-    list-style: none; /* Không hiển thị các chỉ mục ở đầu danh sách*/
-}
-.nav a {
-    color: #666666;
-    display: inline-block;
-    font-family: Roboto;
-    font-size: medium;
-    font-weight: bold;
-    line-height: 24px;
-    text-align: left;
-    text-decoration: none;
-}
-.nav a:hover {
-    color:#03a6f1;
-}
-.imgfooter img{
-    width: 100%;
-    height: 100%;
-}
 #confirm-wrapper {
     width: 100%;
-    height: 135px;
-    font-size: 12px;
-    font-weight: 300;
+    height: 150px;
+    float: left;
+    font-size: 13px;
     background-color: #DDDDDD;
-    text-align: center;padding-top: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
 #confirm-wrapper span {
   color: #666666;

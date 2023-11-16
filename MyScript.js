@@ -47,3 +47,8 @@ leftbtn.addEventListener("click", function(){
     }
     document.querySelector(".slider-product-one-content-items-content").style.right = index *100+"%"
 })
+//-------------------Chuyển ảnh trong Product_Details--------------------//
+function nextCT(x)
+{
+	document.getElementById("slide").setAttribute("src","/TGDD_Picture/" +x+".jpg");
+}
