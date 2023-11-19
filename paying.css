@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+header{
+    background-color: #FFF200;
+    text-align: center;
+}
+/*-----------------------------Header-------------------------------------*/
+nav{
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+nav ul li:nth-child(2) i {
+    color: #FFF200;
+    font-size: 15px;
+}
+nav ul li:nth-child(2) a {
+    color: #FFF200;
+}
+nav ul li:nth-child(3){
+    position: relative;
+}
+nav ul li:nth-child(3) input {
+   height: 30px;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   padding-left: 6px;
+   outline: none;
+}
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 15px;
+    right: 12px;
+    color: #333;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button {
+    height: 30px;
+    padding: 0 8px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #918e8e;
+    border-radius: 5px;
+    transition: all 0.3s ease; /*--Tốc độ đổ bóng khi dê chuột vào --*/
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+   background-color: #6e6b6b;
+}
+nav ul li:nth-child(5){
+    text-align: center;
+ }
+nav ul li:nth-child(5):hover a{
+   color: #FFF200;
+}
+nav ul li:nth-child(6):hover a{
+    color: #FFF200;
+ }
+ nav ul li:nth-child(7):hover a{
+    color: #FFF200;
+ }
+ nav ul li:nth-child(8):hover a{
+    color: #FFF200;
+ }
+/*--------------------------------Menu Bar----------------------------------*/
+.menu-bar{
+    background-color: #FED100;
+ }
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+ }
+.menu-bar ul li a{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu-bar ul li a i{
+    padding-right: 6px;
+    font-size: 16px;
+}
+.menu-bar-content > ul > li{ /* ">": chỉ dùng trực tiếp cho phần tử đó, phần tử con không ảnh hưởng*/
+    padding: 15px 6px;
+    transition: all 0.2s ease;
+}
+.menu-bar ul li:hover{
+    background-color: #FFFFFF;
+}
+.menu-bar-content > ul > li:nth-child(8){
+    position: relative;
+}
+.menu-bar-content > ul > li:nth-child(8)::before {
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #F51212;
+    border-radius: 5px;
+    right: -20px;
+    top: 2px;
+    font-size: 10px;
+    padding-left: 3px;
+    color: #FFFFFF;
+}
+.menu-bar-content > ul > li:nth-child(8)::after{ /*--Mũi tên trỏ xuống màu đỏ phần sim thẻ*/
+    position: absolute;
+    content: "";
+    background-color: #F51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 12px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+/*-------------------------Address Form--------------------------------*/
+.address-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    display: none;
+    z-index: 999;
+}
+.address-form-content{
+    width: 420px;
+    height: 450px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.address-form-content form{
+    padding: 12px 40px;
+}
+.address-form-content h2{
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.address-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+}
+.address-form-content form p{
+    font-size: 16px;
+}
+.address-form-content form input,select{
+    height: 45px;
+    display: block; /*--Tự động xuống hàng--*/
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.address-form-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: rgb(249, 126, 14);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+}
+/*---------------------------Submenu-----------------------------------*/
+.menu-bar-content ul li{
+    position: relative;
+}
+.submenu{
+    position: absolute; /*--Neo vào danh mục phụ kiện, phụ thuộc vào div mẹ--*/
+    background-color: #ddd;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    z-index: 10;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li{
+    padding: 6px 0;
+}
+.menu-bar-content ul li:hover .submenu{
+    display: block;
+}
+.submenu ul li:hover a{
+    color: #257ad5;
+}
+.submenu ul li:hover{
+    background: none;
+}
+/*------------------------------------------------------------*/
+.container1 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.payment-form,
+.order-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+    margin-left: 150px;
+    
+}
+.payment-form label,
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.payment-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.payment-form button:hover {
+    background-color: #45a049;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.total {
+    margin-top: 16px;
+    font-weight: bold;
+}
+.order-details {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+  /* ---------------------Footer End-------------------------- */
+.lienhe{
+    width: 50px;
+    height: 100px;
+    position: fixed; 
+    bottom: 80px;
+}
+#home-policy {
+    height: 125px;
+    background-color: #ffffff;
+    color:  #03a6f1;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 30px 0px 20px;
+    display: flex;
+}
+.policy-item {
+    width: 300px;
+    height: 30px;
+    font-size: larger;
+}
+.policy-item img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+}
+.policy-item span {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+#nav-wrapper {
+    width: 100%;
+    height: 263px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #FFFFFF
+}
+#grid-uniform {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 50px;
+    /* margin: 0px 0px 0px 260px; */
+    display: flex;
+}
+.nav h4 {
+    color : #1293f5;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19.6px;
+    margin: 0px 0px 15px;
+    text-transform: uppercase;
+}
+.nav:hover h4{
+    color: rgb(0, 68, 255);
+}
+.nav li {
+    width: 218px;
+    height: 24px;
+    display: list-item;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    list-style: none; /* Không hiển thị các chỉ mục ở đầu danh sách*/
+}
+.nav a {
+    color: #666666;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: medium;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+}
+.nav a:hover {
+    color:#03a6f1;
+}
+.imgfooter img{
+    width: 100%;
+    height: 100%;
+}
+#confirm-wrapper {
+    width: 100%;
+    height: 135px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #DDDDDD;
+    text-align: center;padding-top: 20px;
+}
+#confirm-wrapper span {
+  color: #666666;
+}
+#confirm-wrapper img {
+    float: left;
+    width: 200px;
+    height: 75px;
+    margin-left: 500px;
+    padding-top: 10px;
+}
+body{
+  background-color: #eee87c;
+}
