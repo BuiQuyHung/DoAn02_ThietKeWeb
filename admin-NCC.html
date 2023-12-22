@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.6.4.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin-Style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+
+    <script>
+        $(document).ready(function(){
+            $(".nav-down").click(function(){
+				$(this).children().children().slideToggle();
+			})
+        })
+    </script>
+</head>
+<body>
+    <div id="header">
+        <img src="./TGDD_Picture/bbqqhh.jpg"><h5 style="color: #fff; padding-left: 80px;">Bùi Quý Hùng</h5>
+        <div class="sign-out">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="index.html"class="text">Đăng xuất</a>
+        </div>
+        <h2>HỆ THỐNG QUẢN TRỊ</h2>   
+    </div>
+    <div id="container">
+        <div id="left">
+            <ul id="nav">
+                <li><a><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                <li class="nav-down"><a><i class="fa-solid fa-list"></i>Thông tin chung</a>
+                    <ul class="subnav">
+                        <li><a href="admin-SP.html">QL Sản Phẩm<i class="fa-solid fa-up-down"></i></a></li>
+                        <li><a href="admin-HangSP.html">QL Hãng Điện Thoại</a></li>
+                        <li><a href="admin-HDNhap.html">QL Hóa Đơn Nhập</a></li>
+                        <li><a href="admin-HDBan.html">QL Hóa Đơn Bán</a></li>
+                        <li><a href="admin-NCC.html">QL Nhà Cung Cấp</a></li>
+                    </ul>
+                </li>
+                <li class="nav-down"><a><i class="fa-solid fa-list"></i>Quản Lý Đơn Hàng</a>
+                    <ul class="subnav">
+                        <li><a>Đơn đã xác nhận<i class="fa-solid fa-up-down"></i></a></li>
+                        <li><a>Đơn chưa xác nhận</a></li>
+                        <li><a>Đơn đang giao</a></li>
+                    </ul>
+                </li>
+                <li class="nav-down"><a><i class="fa-solid fa-user"></i>
+                    User</a>
+                    <ul class="subnav">
+                        <li><a>Nhân Viên<i class="fa-solid fa-up-down"></i></a></li>
+                        <li><a>Khách Hàng</a></li>
+                    </ul>
+                </li>
+                <li class="nav-down"><a>QL Thư Mục<i class="fa-solid fa-up-down"></i></a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <div id="right-top">
+                <h2>Quản lý Nhà cung cấp</h2>
+                <input type="button" value="thêm mới">
+                <input type="button" value="xóa nhiều">
+            </div>
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>Mã sản phẩm</th>
+                    <th>Mã seri</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Tên chuyên mục </th>
+                    <th>Ngày đăng</th>
+                    <th>Sửa </th>
+                    <th>Xóa</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>CVDA-SSAD</td>
+                    <td>Iphone 14</td>
+                    <td>Điện Thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+               
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>ACDA-SSAD</td>
+                    <td>Iphone 12</td>
+                    <td>Điện Thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                <tr >
+                    <td>3</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>NCCA-SSAD</td>
+                    <td>Iphone 11</td>
+                    <td>Điện Thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>NHDA-SSAD</td>
+                    <td>Samsung Galaxy Z Fold4</td>
+                    <td>Điện thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>NHDA-SSAD</td>
+                    <td>Samsung Galaxy Z Fold4</td>
+                    <td>Điện thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>NHDA-SSAD</td>
+                    <td>Samsung Galaxy Z Fold4</td>
+                    <td>Điện thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>NHDA-SSAD</td>
+                    <td>Samsung Galaxy Z Fold4</td>
+                    <td>Điện thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>3565</td>
+                    <td>NHDA-SSAD</td>
+                    <td>Samsung Galaxy Z Fold4</td>
+                    <td>Điện thoại</td>
+                    <td>10/11/2002</td>
+                    <td><img src="./TGDD_Picture/sua.png"></td>
+                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+</body>
+</html>

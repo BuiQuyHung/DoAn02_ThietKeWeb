@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+#header{
+    height: 100px;
+    width: 100%;
+    background-color: #44a7b2;
+    position: fixed;
+}
+#header img{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+#header a{
+    margin-left: 5px;
+    text-decoration: none;
+}
+#header i{
+    margin-left: 70px;
+    text-decoration: none;
+    color: #fff;
+}
+#header h2{
+    text-align: center;
+    margin-top: -55px;
+    color: #fff;
+}
+.text{
+    color: rgb(219, 78, 78);
+    font-weight: bold;
+}
+#container{
+    margin-top: 0px;
+}
+#left{
+    width: 17%;
+    float: left;
+    top:100px;
+    margin-top: 100px;
+
+}
+#nav{
+    padding-left: 0px;
+}
+#nav>li>a{
+    background-color: #44a7b2;
+    color: #ffff;
+}
+#nav li a,
+#nav .subnav li{
+    padding: 10px 0;
+    display: block;
+    /* padding-left: 10px; */
+
+}
+.subnav li a{
+    height: 20px;
+}
+.subnav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#nav .subnav {
+    margin-left: 0px;
+    padding-inline-start: 0px;
+    background-color: #66c7d8;
+    color: #fff;
+    /* display: none; */
+}
+
+#nav li {
+    list-style-type: none;
+    border-bottom: #f0efef solid 1px;
+
+}
+#nav li a{
+    padding-left: 20px;
+}
+#nav li i{
+    float: right;
+    margin-right: 8px;
+    text-align: center;
+}
+#right{
+    margin-left: 240px ;
+    width: 75%;
+}
+#right-top{
+
+    padding-top: 120px;
+}
+#right h2{
+    color: #44a7b2;
+    font-size: 30px;
+    font-weight: bold;
+}
+#right i{
+    margin-right: 10px;
+}
+#right tr td img{
+    width: 25px;
+    height: 25px;
+}
+#right input{
+    background-color: #44a7b2;
+    color: #fff;
+    border: #fff;
+    font-weight: bold;
+    padding: 8px 5px;
+    margin: 20px 5px;
+    text-transform: uppercase;
+}
+#right table{
+    width: 100%;
+    margin: 0;
+    border-spacing:1px ; 
+}
+#right table th{
+    background-color: #44a7b2;
+    color: #fff;
+    /* padding: 0px 10px;  */
+    line-height: 0px;
+    height: 50px;
+    
+}
+#right table input{
+    margin: 0;
+}
+#right table td{
+    text-align: center;
+    height: 50px;
+    margin: 0px;
+}
+table th:nth-child(odd){  
+    background-color:#eee;
+}
+table tr:nth-child(even){
+    background-color:white;
+}
