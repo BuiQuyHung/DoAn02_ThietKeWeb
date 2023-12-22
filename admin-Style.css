@@ -93,8 +93,15 @@ body{
     margin-left: 240px ;
     width: 75%;
 }
+#inputSearch{
+    width: 300px;
+    color: #eee;
+    border-radius: 5px;
+}
+::placeholder { 
+    color: #fff;     /* Firefox, Chrome, Opera */
+}
 #right-top{
-
     padding-top: 120px;
 }
 #right h2{
@@ -117,6 +124,7 @@ body{
     padding: 8px 5px;
     margin: 20px 5px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 #right table{
     width: 100%;
