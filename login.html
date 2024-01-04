@@ -92,18 +92,19 @@
         <span>/</span>
         <a href="#">TÀI KHOẢN</a>
     </div>
-    
-    <div id="body-content">
-        <div id="login">
-            <h1>ĐĂNG NHẬP</h1>
-            <input type="email" id="email" name="email" placeholder="Email">
-            <input type="password" id="pass" name="pass" placeholder="Mật khẩu">
-            <a href="admin-SP.html"><input id="btnlogin" type="button" value="Login" ></a>
-            <a href="index.html"><h3>Trở về</h3></a>
-            <a href="register.html"><h3>Đăng kí</h3></a>
-            <a href="#"><h3>Quên mật khẩu?</h3></a>
+    <form id="loginForm" onsubmit="login(event)">
+        <div id="body-content">
+            <div id="login">
+                <h1>ĐĂNG NHẬP</h1>
+                <input type="text" id="TenDN" name="email" placeholder="Tên đăng nhập" required>
+                <input type="password" id="passDN" name="pass" placeholder="Mật khẩu" required>
+                <input id="btnlogin" type="submit" value="Login">
+                <a href="index.html"><h3>Trở về</h3></a>
+                <a href="register.html"><h3>Đăng kí</h3></a>
+                <a href="#"><h3>Quên mật khẩu?</h3></a>
+            </div>
         </div>
-    </div>
+    </form>
 </section>
 
 <div id="news_letter">
@@ -194,8 +195,8 @@
             <img src="./TGDD_Picture/bocongthuong.png">
         </div>
     </div>
+    <script src="login.js"></script>
 </section>
 
-<script src="MyScript.js"></script>
 </body>
 </html>

@@ -15,6 +15,22 @@
 				$(this).children().children().slideToggle();
 			})
         })
+
+        $(document).ready(function() {
+        // Gắn sự kiện click cho nút "Xóa"
+        $('.deleteRow').on('click', function() {
+        // Hiển thị hộp thoại xác nhận
+        var isConfirmed = confirm("Bạn có chắc chắn muốn xóa không?");
+    
+        // Nếu người dùng đồng ý, xóa dòng
+        if (isConfirmed) {
+        // Tìm phần tử cha (dòng) của nút được nhấp
+        var row = $(this).closest('tr');
+        // Xóa dòng từ DOM
+        row.remove();
+             }
+         });
+        });
     </script>
 </head>
 <body>
@@ -59,7 +75,7 @@
         <div id="right">
             <div id="right-top">
                 <h2>Quản lý Sản phẩm</h2>
-                <input type="button" value="thêm mới">
+                <a href="themSP.html"><input type="button" value="thêm mới"></a>
                 <input type="button" value="xóa nhiều">
                 <input id="inputSearch" type ="text" placeholder="Bạn tìm gì..."><i class="fa-sharp fa-solid fa-magnifying-glass" style="cursor: pointer;"></i>
             </div>
@@ -84,7 +100,7 @@
                     <td>Điện Thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                
                 </tr>
                 <tr>
@@ -96,7 +112,7 @@
                     <td>Điện Thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 <tr >
                     <td>3</td>
@@ -107,7 +123,7 @@
                     <td>Điện Thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -118,7 +134,7 @@
                     <td>Điện thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -129,7 +145,7 @@
                     <td>Điện thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -140,7 +156,7 @@
                     <td>Điện thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow"src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 <tr>
                     <td>7</td>
@@ -151,7 +167,7 @@
                     <td>Điện thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 <tr>
                     <td>8</td>
@@ -162,7 +178,7 @@
                     <td>Điện thoại</td>
                     <td>10/11/2002</td>
                     <td><img src="./TGDD_Picture/sua.png"></td>
-                    <td><img src="./TGDD_Picture/xoa.png"></td>
+                    <td><img class="deleteRow" src="./TGDD_Picture/xoa.png"></td>
                 </tr>
                 
             </table>

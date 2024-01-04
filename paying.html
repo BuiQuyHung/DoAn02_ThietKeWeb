@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="paying.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
     <script>
-        function showAlert() {
-          alert('Đã thanh toán!');
+       function showAlert() {
+        // Kiểm tra xem tất cả các trường đều đã được điền đầy đủ hay chưa
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var cardNumber = document.getElementById("cardNumber").value;
+        var expiry = document.getElementById("expiry").value;
+        var cvv = document.getElementById("cvv").value;
+
+        if (name === "" || email === "" || cardNumber === "" || expiry === "" || cvv === "") {
+            alert("Vui lòng điền đầy đủ thông tin");
+        } else {
+            // Nếu tất cả đều hợp lệ, thực hiện hành động thanh toán
+            // (Bạn có thể thay thế bằng các xử lý khác tùy thuộc vào yêu cầu của bạn)
+            alert("Thanh toán thành công!");
         }
+    }
       </script>
 </head>
 <body>
@@ -91,24 +104,24 @@
     <h2 style="font-weight: bold;margin-top: 30px;margin-bottom: 30px;color: #2e2e2e;font-size: xx-large;">Thanh Toán Hóa Đơn</h2>
   <div class="container1">
     <div class="payment-form">
-      <form>
-        <label for="name">Họ và Tên:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="cardNumber">Số Thẻ Tín Dụng:</label>
-        <input type="text" id="cardNumber" name="cardNumber" required>
-
-        <label for="expiry">Ngày Hết Hạn:</label>
-        <input type="text" id="expiry" name="expiry" placeholder="MM/YYYY" required>
-
-        <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv" required>
-
-        <button type="button" onclick="showAlert()">Thanh Toán</button>
-      </form>
+        <form>
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="cardNumber">Số Thẻ Tín Dụng:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+        
+            <label for="expiry">Ngày Hết Hạn:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YYYY" required>
+        
+            <label for="cvv">Mã bảo mật:</label>
+            <input type="text" id="cvv" name="cvv" required>
+        
+            <button type="button" onclick="showAlert()">Thanh Toán</button>
+        </form>
     </div>
 
     <div class="order-details">

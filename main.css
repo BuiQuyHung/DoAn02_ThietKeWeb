@@ -905,6 +905,10 @@ nav ul li:nth-child(6):hover a{
     font-size:14px;
     font-weight:300;
     padding:0px 0px 10px;
+    /* margin-top: 30px; */
+}
+#body-content input{
+    margin-top: 15px;
 }
 #login{
     width: 383px;
@@ -929,7 +933,7 @@ nav ul li:nth-child(6):hover a{
     text-transform:uppercase;
 }
 
-#email, #pass{
+.email, .pass{
     width: 383px;
     min-height:40px ;
     background-color:#ffffff;
@@ -943,7 +947,20 @@ nav ul li:nth-child(6):hover a{
     padding:8px 10px;
     border: none;
 }
-
+#TenDN, #passDN{
+    width: 383px;
+    min-height:40px ;
+    background-color:#ffffff;
+    border-radius:3px;
+    color:#333333;
+    font-family:Roboto;
+    font-size:14px;
+    font-weight:300;
+    line-height:22.4px;
+    margin:0px 0px 10px;
+    padding:8px 10px;
+    border: none;
+}
 #btnlogin{
     width: 383px;
     height: 37px;
@@ -960,7 +977,6 @@ nav ul li:nth-child(6):hover a{
     text-align:center;
     border: none;
 }
-
 #btnlogin:hover{
     align-items:flex-start;
     background-color: red;
@@ -970,11 +986,20 @@ nav ul li:nth-child(6):hover a{
     font-size:14px;
     font-weight:700;
     line-height:19.88px;
-    margin:0px 0px 10px;
     padding:8px 10px;
     text-align:center
 }
-
+.input{
+    position: relative;
+}
+small {
+    color: #e74c3c; 
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    visibility: hidden;
+    font-size: 12px; 
+}
 #login h3{
     width: 383px;
     height:17px ;
@@ -1102,7 +1127,6 @@ nav ul li:nth-child(6):hover a{
     cursor: pointer;
 }
 /*-------------------------------------------------*/
-
 
 
 

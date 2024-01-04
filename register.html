@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-DoAn02-BQH</title>
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
@@ -92,20 +93,33 @@
         <span>/</span>
         <a href="#">TÀI KHOẢN</a>
     </div>
-    
-    <div id="body-content">
-        <div id="login">
-            <h1>ĐĂNG KÝ</h1>
-            <input type="email" id="email" name="email" placeholder="Email">
-            <input type="email" id="email" name="SĐT" placeholder="Số điện thoại">
-            <input type="password" id="pass" name="pass" placeholder="Mật khẩu">
-            <input type="password" id="pass" name="pass" placeholder="Nhập lại Mật khẩu">
-            <a href="AdminPage.html"><input id="btnlogin" type="button" value="Login" ></a>
-            <a href="Index.html"><h3>Trở về</h3></a>
+    <form id="myForm" onsubmit="signup(event)">
+        <div id="body-content">
+            <div id="login">
+                <h1>ĐĂNG KÝ</h1>
+                <div class="input">
+                    <input class="email" id="TenDN" type="text" name="email" placeholder="Tên đăng nhập">
+                    <small id="TenDNerror">Tên đăng nhập không được bỏ trống</small>
+                </div>
+                <div class="input">
+                    <input class="email" id="sdt" type="tel" name="SĐT" placeholder="Số điện thoại">
+                    <small id="Sdterror">Số điện thoại không được bỏ trống</small>
+                </div>
+                <div class="input">
+                    <input class="pass" id="matkhau" type="password" name="pass" placeholder="Mật khẩu">
+                    <small id="Passerror">Mật khẩu không được bỏ trống</small>
+                </div>
+                <div class="input">
+                    <input class="pass" id="nhaplaimatkhau" type="password" name="pass" placeholder="Nhập lại Mật khẩu">
+                    <small id="unmatch">Không trùng khớp với mật khẩu trên</small>
+                </div>
+                
+                <input id="btnlogin" type="submit" value="Đăng ký">
+                <a href="login.html"><h3>Trở về</h3></a>
+            </div>
         </div>
-    </div>
+    </form>
 </section>
-
 <div id="news_letter">
     <label>ĐĂNG KÝ NHẬN EMAIL
     <span>Đăng ký nhận thông tin sản phẩm mới</span></label>
@@ -194,8 +208,9 @@
             <img src="./TGDD_Picture/bocongthuong.png">
         </div>
     </div>
+<script src="login.js"></script>
+
 </section>
 
-<script src="MyScript.js"></script>
 </body>
 </html>
